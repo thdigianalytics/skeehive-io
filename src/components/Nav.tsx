@@ -9,17 +9,19 @@ const NAV_LINKS = [
   { label: 'Blog', to: '/blog' },
 ]
 
-function HexIcon() {
+function SkeehiveLogo() {
   return (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-      <path d="M14 2L25 8.5V19.5L14 26L3 19.5V8.5L14 2Z" fill="url(#hexGradNav)" />
-      <defs>
-        <linearGradient id="hexGradNav" x1="3" y1="2" x2="25" y2="26" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#6366f1" />
-          <stop offset="1" stopColor="#8b5cf6" />
-        </linearGradient>
-      </defs>
-      <text x="14" y="19" textAnchor="middle" fontSize="11" fontWeight="700" fill="white">S</text>
+    <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* Hexagon background */}
+      <path d="M50 4L93 28V72L50 96L7 72V28L50 4Z" fill="white" rx="4"/>
+      {/* Left vertical bar */}
+      <rect x="26" y="24" width="8" height="52" rx="2" fill="#0a0a0f"/>
+      {/* Right vertical bar */}
+      <rect x="66" y="24" width="8" height="52" rx="2" fill="#0a0a0f"/>
+      {/* Top slanted crossbar (parallelogram leaning right) */}
+      <path d="M34 32L66 28L74 38L34 42Z" fill="#0a0a0f"/>
+      {/* Bottom horizontal crossbar */}
+      <rect x="26" y="56" width="48" height="8" rx="2" fill="#0a0a0f"/>
     </svg>
   )
 }
@@ -48,7 +50,7 @@ export default function Nav() {
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2.5">
-          <HexIcon />
+          <SkeehiveLogo />
           <span className="font-bold text-[15px] tracking-tight">Skeehive Digital</span>
         </Link>
 
