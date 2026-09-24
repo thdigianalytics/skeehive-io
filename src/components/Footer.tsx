@@ -9,12 +9,12 @@ const NAV_LINKS = [
 
 function SkeehiveLogo() {
   return (
-    <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 4L93 28V72L50 96L7 72V28L50 4Z" fill="white"/>
-      <rect x="26" y="24" width="8" height="52" rx="2" fill="#0a0a0f"/>
-      <rect x="66" y="24" width="8" height="52" rx="2" fill="#0a0a0f"/>
-      <path d="M34 32L66 28L74 38L34 42Z" fill="#0a0a0f"/>
-      <rect x="26" y="56" width="48" height="8" rx="2" fill="#0a0a0f"/>
+    <svg width="28" height="25" viewBox="0 0 120 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 8 Q8 8 4 20 L4 86 Q8 98 20 98 L100 98 Q112 98 116 86 L116 20 Q112 8 100 8 Z" fill="white"/>
+      <line x1="38" y1="22" x2="38" y2="84" stroke="#0a0a0f" strokeWidth="6" strokeLinecap="round"/>
+      <line x1="82" y1="22" x2="82" y2="84" stroke="#0a0a0f" strokeWidth="6" strokeLinecap="round"/>
+      <line x1="38" y1="38" x2="82" y2="56" stroke="#0a0a0f" strokeWidth="6" strokeLinecap="round"/>
+      <line x1="38" y1="68" x2="82" y2="68" stroke="#0a0a0f" strokeWidth="6" strokeLinecap="round"/>
     </svg>
   )
 }
