@@ -10,20 +10,10 @@ const NAV_LINKS = [
 ]
 
 function SkeehiveLogo() {
-  // Flat-top hexagon, rounded corners, thin-stroke mark inside
-  // Mark: left vertical, right vertical, diagonal slash (upper-left to lower-right), lower horizontal bar
+  // Official SVG from Electric Jelly — icon portion only (x=364..443, y=0..88 of original viewBox)
   return (
-    <svg width="34" height="30" viewBox="0 0 120 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Flat-top hex: pointy left+right, flat top+bottom, heavily rounded corners */}
-      <path d="M20 8 Q8 8 4 20 L4 86 Q8 98 20 98 L100 98 Q112 98 116 86 L116 20 Q112 8 100 8 Z" fill="white"/>
-      {/* Left vertical stroke */}
-      <line x1="38" y1="22" x2="38" y2="84" stroke="#0a0a0f" strokeWidth="6" strokeLinecap="round"/>
-      {/* Right vertical stroke */}
-      <line x1="82" y1="22" x2="82" y2="84" stroke="#0a0a0f" strokeWidth="6" strokeLinecap="round"/>
-      {/* Diagonal crossbar — upper-left to lower-right */}
-      <line x1="38" y1="38" x2="82" y2="56" stroke="#0a0a0f" strokeWidth="6" strokeLinecap="round"/>
-      {/* Lower horizontal bar */}
-      <line x1="38" y1="68" x2="82" y2="68" stroke="#0a0a0f" strokeWidth="6" strokeLinecap="round"/>
+    <svg width="36" height="36" viewBox="364 0 79.46 88.03" xmlns="http://www.w3.org/2000/svg">
+      <path fill="white" d="M437.84,17.89l-28.38-16.39c-3.48-2.01-7.77-2.01-11.24,0l-28.38,16.39c-3.48,2.01-5.62,5.72-5.62,9.74v32.77c0,4.02,2.14,7.73,5.62,9.74l28.38,16.39c3.48,2.01,7.77,2.01,11.24,0l28.38-16.39c3.48-2.01,5.62-5.72,5.62-9.74V27.63c0-4.02-2.14-7.73-5.62-9.74ZM425.29,45.88h-2v19.59c0,1.03-.84,1.87-1.87,1.87s-1.87-.84-1.87-1.87v-10.41l-32.65,12.16c-.21.08-.43.12-.65.12-.38,0-.75-.11-1.06-.33-.5-.35-.8-.92-.8-1.53v-19.59h-2c-1.03,0-1.87-.84-1.87-1.87s.84-1.87,1.87-1.87h2v-19.59c0-1.03.84-1.87,1.87-1.87s1.87.84,1.87,1.87v10.41l32.65-12.16c.57-.21,1.21-.13,1.72.22.5.35.8.92.8,1.53v19.59h2c1.03,0,1.87.84,1.87,1.87s-.84,1.87-1.87,1.87Z"/>
     </svg>
   )
 }
